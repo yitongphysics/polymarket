@@ -1,0 +1,34 @@
+"""Search Gamma markets by keyword(s) and print question + conditionId for each match."""
+
+import sys
+from pathlib import Path
+
+_ROOT = Path(__file__).resolve().parents[2]
+if str(_ROOT) not in sys.path:
+    sys.path.insert(0, str(_ROOT))
+
+from polymarket.api.markets import get_markets_by_slug_keyword
+
+
+KEYWORDS = ["US-Iran nuclear deal"]      # all must appear in question (AND, case-insensitive)
+EXCLUDES: list[str] = []          # substrings to exclude
+
+
+def main():
+    markets = get_markets_by_slug_keyword(
+        keyWordList=KEYWORDS,
+        doNotContainList=EXCLUDES,
+    )
+
+    if markets.empty:
+        print("No markets matched.")
+        return
+
+    for _, row in markets.iterrows():
+        print(f"{row.get('conditionId')}\t{row.get('question')}")
+
+    print(f"\n{len(markets)} match(es).")
+
+
+if __name__ == "__main__":
+    main()

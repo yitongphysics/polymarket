@@ -1,0 +1,27 @@
+# Credentials
+config.json
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.venv/
+*.egg-info/
+
+# Data / logs
+*.csv
+*.txt
+data/
+
+# IDE
+.vscode/
+.idea/
+
+# Personal notes
+journal/
+
+# OS
+.DS_Store
+
+# Build artifacts
+py-builder-signing-sdk/
