@@ -11,6 +11,7 @@ __pycache__/
 # Data / logs
 *.csv
 *.txt
+!apps/recording/condition_ids.txt
 data/
 
 # IDE
