@@ -84,13 +84,17 @@ def resolve_yes_tokens(condition_ids: list[str]) -> dict[str, dict]:
     Hits Gamma /markets directly so we don't drop markets via unrelated filters.
     YES is the first entry in clobTokenIds, matching the order of `outcomes`.
     """
-    r = requests.get(
-        GAMMA_MARKETS_URL,
-        params={"condition_ids": condition_ids},
-        timeout=15,
-    )
-    r.raise_for_status()
-    markets = r.json() or []
+    markets: list[dict] = []
+    BATCH = 25
+    for i in range(0, len(condition_ids), BATCH):
+        chunk = condition_ids[i : i + BATCH]
+        r = requests.get(
+            GAMMA_MARKETS_URL,
+            params={"condition_ids": chunk},
+            timeout=15,
+        )
+        r.raise_for_status()
+        markets.extend(r.json() or [])
     if not markets:
         raise SystemExit(
             f"Gamma returned no markets for {len(condition_ids)} condition_ids."
