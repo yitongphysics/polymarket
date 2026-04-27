@@ -56,7 +56,8 @@ def read_condition_ids(path: str) -> list[str]:
             line = line.strip()
             if not line or line.startswith("#"):
                 continue
-            cids.append(line)
+            cid = line.split()[0]
+            cids.append(cid)
     if not cids:
         raise SystemExit(f"No condition_ids found in {path}")
     return cids

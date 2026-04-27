@@ -10,8 +10,10 @@ if str(_ROOT) not in sys.path:
 from polymarket.api.markets import get_markets_by_slug_keyword
 
 
-KEYWORDS = ["US-Iran nuclear deal"]      # all must appear in question (AND, case-insensitive)
+KEYWORDS = ["iran", "Hormuz"]      # at least one appear in question (OR, case-insensitive)
 EXCLUDES: list[str] = []          # substrings to exclude
+
+OUTPUT_PATH = _ROOT / "apps" / "recording" / "condition_ids.txt"
 
 
 def main():
@@ -27,7 +29,10 @@ def main():
     for _, row in markets.iterrows():
         print(f"{row.get('conditionId')}\t{row.get('question')}")
 
-    print(f"\n{len(markets)} match(es).")
+    lines = [f"{row.get('conditionId')}\t{row.get('question')}" for _, row in markets.iterrows()]
+    OUTPUT_PATH.write_text("\n".join(lines) + "\n")
+
+    print(f"\n{len(markets)} match(es). Wrote {len(lines)} row(s) to {OUTPUT_PATH}.")
 
 
 if __name__ == "__main__":

@@ -127,7 +127,7 @@ def get_markets_by_slug_keyword(
 
     results = pd.concat(results)
     results = results[
-        results["question"].str.lower().apply(lambda q: all(kw in q for kw in kws)) # contains all of the keywords
+        results["question"].str.lower().apply(lambda q: any(kw in q for kw in kws)) # contains any of the keywords
     ]
     results = results[
         results["question"]

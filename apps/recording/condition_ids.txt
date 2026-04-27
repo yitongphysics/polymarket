@@ -1,14 +1,187 @@
-0xce9a5fa30fe74e323b4a8f15afbb0b7a41a537aa880779ddf7dee22223b2f34a
-0x48fbf70c1713e71a405052bc4641e26dbba435fa557672c4040763c901cbf606
-0xcd215b8330a35098a1a3f6c46b6492347edb5e74c1e0a95ac4d3d54aece6c262
-0xaaacff0f7424b38e61ee5c5b2ea9d7335d0553eca2afb874267cd94c54a11925
-0xd749f7f15df4d76e621fdc88eabe87198b535b8d49f5b3918bb562701feeb939
-0x65f204a8ebbaa472d668cc4fdbe4dd45249405a7e0acea43b7930a216e5bfdc7
-0xfa59099fbda1e0f0058ed3cbd57e939fe90ab6d9b57d53bd488bcadf75c191d4
-0xc84dfa2ab4a808d1b96a2cf439f8b88a1c5c37762253280deb7663a195d9b859
-0x57c1e8de9d359a76055fe1be95e46a1e72d0537811dcc2ccf070cdfa73d8ba33
-0x3285179b99df57b0390e480f8e69d340e5fa38496b263225df90ef389e2958f4
-0xe00f84278d7ec49668b4f9f6c6d0a437663cdcf0e330fdb3789c649f8a29fdc8
-0x182390641d3b1b47cc64274b9da290efd04221c586651ba190880713da6347d9
-0xa70fc3695a65833b91b45df6db6015096f3e1471b70352ca411b4209010e7633
-0xd08544f6162283dc8d0a82f16362aab837a8537379df9bbe604960eec9cd4618
+0xbb4d51e6364066d92eb6f9b8413dd7193de70966736044463b205834805a1f3b	Will the Iranian regime fall before 2027?
+0x182390641d3b1b47cc64274b9da290efd04221c586651ba190880713da6347d9	US-Iran nuclear deal before 2027?
+0x5db999fad322cea2914535aae5517060c3f80ad6d8c0231cde2124a434d16846	Will the U.S. invade Iran before 2027?
+0x765e5daae966128da2acac8edab65d23abcabcf8958563a490d24c3498812c85	Iran nuclear test before 2027?
+0x3e0845c4736ae232c57b347d05f6145650416dfd3adb0fa5d7ddd335c64a84ca	Will Iran withdraw from the NPT before 2027?
+0x8bdeac60c92d3bc494792fd334ca181b0cf70355f23dca4098d558280b554c81	Iran Nuke before 2027?
+0xa70fc3695a65833b91b45df6db6015096f3e1471b70352ca411b4209010e7633	US-Iran nuclear deal by June 30?
+0x9352c559e9648ab4cab236087b64ca85c5b7123a4c7d9d7d4efde4a39c18056f	Will the Iranian regime fall by June 30?
+0x43272c02b8407ed3f8d5b04fb4cb132d7a59c5df6ecc423afcf66f1c778d1887	Will Reza Pahlavi enter Iran by June 30?
+0x0ac2141f45ac7ecb8477c64207db37f8f8efce800cbf705366771902e796e92a	US recognizes Reza Pahlavi as leader of Iran in 2026?
+0x17c9dead8bed402d330e2aa5bcfb4d6f7764d3cc60d6508a03be003f4e88e64b	Iran coup attempt by June 30?
+0x3285179b99df57b0390e480f8e69d340e5fa38496b263225df90ef389e2958f4	Will the US officially declare war on Iran by December 31, 2026?
+0xefc69f5f48827e331957acbcc2339eb3b15e27e32453b8e6f29b5de67474c986	Will the Iranian regime survive U.S. military strikes?
+0x9d3f02264a94bafc676afd7add8b11442e6ec72dabaa69cefef835f0672275c7	 Iran agrees to end enrichment of uranium by June 30?
+0x2f224fca80a6a6b3a2a200406473fc8b33da6bcf5af83dc3fe9021a541c0519d	Will Reza Pahlavi enter Iran by December 31?
+0x6397f084bcee3390e92b0a4f8d0f1fa23ddabad1668c4a6783f5643564f646d6	Will there be no Head of State in Iran end of 2026?
+0xae6d228c3a89c04f5d48b130c86416b146ee3fdc19c6f201603d9c9682dca3ea	Will Muhammad Mirbaqiri be head of state in Iran end of 2026?
+0x1c3443745a19b5da3775711dae0bc72056c9a816ccb1c8f6748e304608bd9762	Will Sadegh Larijani be head of state in Iran end of 2026?
+0x25fb28382075f418a944a781a9f8840e2f541152eea0d9798d1cabfa1466adbb	Will Mojtaba Khamenei be head of state in Iran end of 2026?
+0xe19caac25967e1c4b09254ebe6f152dde51fe9468cf1def1deb3c22089083adf	Will Hassan Khomeini be head of state in Iran end of 2026?
+0xe6eb21883f57c3047cf7be1d7cff4554fbb82067e374bd07c53242170f57851f	Will Reza Pahlavi be head of state in Iran end of 2026?
+0x7d9928e23aefb2209696048829b614f49e387d5a77327aa887d0724952fd1156	Will Hassan Shariatmadari be head of state in Iran end of 2026?
+0x370c146544d0fb7db1d77767473c8a6fbdf08b9914c827712d49449b0eb7f4aa	Will Maryam Rajavi be head of state in Iran end of 2026?
+0x17a0a4c8d29c95bf6f3e3576fc603faf29ae681a0924719cf27a89ec46efa185	Will Massoud Rajavi be head of state in Iran end of 2026?
+0x821f357da390a32347e4df0c3fb0aa4a8eadf4af72730c8dc7a7f1ab58798a02	Will Seyed Hossein Mousavian be head of state in Iran end of 2026?
+0x68617ef6b6488a6a4753c9d57604764831a9448fb8aa7dee205bb2311e3b949d	Will Reza Pirzadeh be head of state in Iran end of 2026?
+0xb937d98fe645987a6ccd495928ffbf753537b6c8ef4214bbbf4ee4dd32cec96f	Will Navid Shomali be head of state in Iran end of 2026?
+0x2883a5f83ea4b394d1b0acae4179f4ed4cb35111c9b996bb5099927bb846e2ea	Will Mustafa Hijri be head of state in Iran end of 2026?
+0x73d9b98f619d738cca001cfde25654d409a132f0eb565ae98972b62b123a4da0	Will Ali Motahari be head of state in Iran end of 2026?
+0xb74991507f427043b7ee95a235b6920f1cf698e32333d98b7b4602787ef981a3	Will Gholam-Ali Haddad-Adel be head of state in Iran end of 2026?
+0xaa53ce562be767321e2f0cba9f7b3207fde7d2204dbb7f9b5d804996eba7de7c	Will Mostafa Pourmohammadi be head of state in Iran end of 2026?
+0xce9edcb8be64fadb0c83a6be6bc4efec26eaab5a9e05bcfca5c70c700c7b0942	Will Sadegh Mahsouli be head of state in Iran end of 2026?
+0xb10aa376c96281d85f8d93e69107bb37aedb1bc2b953e24718836aee1bb64f3f	Will Masoud Pezeshkian be head of state in Iran end of 2026?
+0x6ab0ce92e138eec9776d055e052140ff284f885fb8a54c74a944316e4a2e4d80	Will Saeed Jalili be head of state in Iran end of 2026?
+0xa62f1bf829a121000d61acafed2689cdaa1488253e420214112103dcffab2fde	Will Hassan Rouhani be head of state in Iran end of 2026?
+0xb174c3e769e52b51681b154172468f89c685b9fe24c4b0ef3ef5f8c3b511c3a0	Will Mahmoud Ahmadinejad be head of state in Iran end of 2026?
+0x4266ab921148974f104cbadd099e13bca989441bf58acfd2a08fc6cc7440e1a1	Will Mohammad Khatami be head of state in Iran end of 2026?
+0xa1b6ebba4e86fe9bfb2c206dba71be111d2e1047d7b74125eb223c1b3da7ebd6	Will Alireza Arafi be head of state in Iran end of 2026?
+0x504088e48d1e39815d24709930eda874ad3b69a1ed2b1cd2e3f480981410f71c	Will Abbas Araghchi be head of state in Iran end of 2026?
+0x9bc5b4e8a866be23195ae675ec7c3ca2e4fece72c80fffe82a7d69726f9dfc61	Will Ahmad Vahidi be head of state in Iran end of 2026?
+0xf6270788587ee0a37c2e56635bdeb7df06d54e32b5e0b0c932369ed6f2e948b0	Will Mohsen Araki be head of state in Iran end of 2026?
+0xba797b6b0de81c3be8abf2492bde5fd033c179063447681ecfefe80b1956db18	Will Nasir Hosseini be head of state in Iran end of 2026?
+0xfa0834c8af9d40d1b13db4f616a624d64cf499c2903f9e884c25e651eedb1820	Will Ahmad Hosseini Khorasani be head of state in Iran end of 2026?
+0x01110879441e6376a69dc318c4c8f9cbb4f6eef394d3563b6925ce17db809404	Will Ali Asghar Hejazi be head of state in Iran end of 2026?
+0x0df7e873042bebb09fbe24562069f28670c6b9366cab653fe15e030173cbc18c	Will Mohammad-Bagher Ghalibaf be head of state in Iran end of 2026?
+0xaa5cdb6830cbfa2ca711b7cf93bd42cf4f8e062d44ea188c0b8ec1fb2924c083	Will Reza Pahlavi lead Iran in 2026?
+0x91467d5c49b5e06a68d101c3ea2e227ffd76215060d93381aca203ee26cf2d06	Will the US reopen its embassy in Iran in 2026?
+0x584c9773bd54965e7c1b4c7ca6dd6ec7a7ee47632f41f877be179aeb3c9006be	Will any U.S. House member enter Iran by June 30?
+0xaa2d85a0f668d96c7d7efc1c9ca736119b6d230a439daea9998be032e4ce007d	Will any U.S. Senator enter Iran by June 30?
+0x9c9c61a05eb70ddd796283b86db07efd0c07a4d29b48870987f1c8279217f783	Will Jared Kushner enter Iran by June 30?
+0x77eafa497fe8ff7a41f540e2920e8897540b01f06b82477d168c4a21a7f9e57a	Will JD Vance enter Iran by June 30?
+0xb7c3eb14951b4bdbca17460231d502acd843e5a1b2fa4b2e784fc4e86f4e61d8	Will Marco Rubio enter Iran by June 30?
+0x80590117819c7b4a2be045d98f7be8247fa13162830e5540bec140d14829e9eb	Will Pete Hegseth enter Iran by June 30?
+0x52f23b60032d6e63721bb64c06077c783c97c0c44a31073b8027f31865eff2b5	Will Donald Trump enter Iran by June 30?
+0xfacf7578441650ec19a86bf2d9c264744bb9180f80ad603c65204aa203bd1755	Will Iran hold a presidential election by June 30?
+0x15fcf94587789dcd26efd4a31a1dbc8ff80c3c0bbfed1ca7eb90a054fda6efbf	Kurds declare independence from Iran?
+0xe443dab97ad8b7f58558cc7a6a3932d156031e962a451e0461e9a4578d78fe84	Will the Iranian regime fall by April 30?
+0xe6939069d36ad63a9f7fcafa91b627a3f373a3264ab0347c1a5e042c5f7d1f08	Iran agrees to end enrichment of uranium by April 30?
+0xfa59099fbda1e0f0058ed3cbd57e939fe90ab6d9b57d53bd488bcadf75c191d4	Trump announces end of military operations against Iran by April 30th?
+0xc84dfa2ab4a808d1b96a2cf439f8b88a1c5c37762253280deb7663a195d9b859	Trump announces end of military operations against Iran by June 30th?
+0xb412664463bbfe21be44b1963291205ab332afd4f7f6e0d027aec1ba7a9e6793	Iran leadership change by April 30?
+0x377e7fe65cf198a7fc4fdae3f2136b74729279267858daaf96718b23bc2a5607	Iran leadership change by December 31?
+0x924a2942747dd75703321a7c8d809c68f6a514c3b0f2a2e64274e02310634669	Strait of Hormuz traffic returns to normal by end of April?
+0xd08544f6162283dc8d0a82f16362aab837a8537379df9bbe604960eec9cd4618	US-Iran nuclear deal by April 30?
+0x12e3cc1640a58ee52e0ce2237c95ffefb7f543d65c0061043f23c803b215f099	Mojtaba Khamenei leaves Iran by April 30, 2026?
+0x01ffd0acf0d6e42558a7cbd521efde937166a1bf09f3a2dfcdf36950c2dd3635	US escorts commercial ship through Hormuz by April 30?
+0x7dca1c4307dddce4d21198ee7297585da0d2c9300019cad78d2b671fae0b3dca	Will Reza Pahlavi enter Iran by April 30?
+0xc6dba42f37731aacc06f6b897e2951feffe2fed043415a79d67e06c770ba7c9b	Will there be between 0 and 10 average daily transits of the Strait of Hormuz on April 30?
+0x0a2d679061801f07c1ec866fe3b0a699b76a79553d004fd8ce1d43ea9bf8454d	Will there be between 10 and 20 average daily transits of the Strait of Hormuz on April 30?
+0xd30ed4299e3ff89e3b413a80cf9ab482356749157d983698a0249af6831f31b1	Will there be between 20 and 30 average daily transits of the Strait of Hormuz on April 30?
+0xad7a1dda9ec1584e254d12b920263e6c430367398a78aaa1d4f57c8480b12d2e	Will there be between 30 and 40 average daily transits of the Strait of Hormuz on April 30?
+0xc177484dab86c7fed3764706cd348ca1b6eebe4592ed10befc447e592ff4c135	Will there be between 40 and 50 average daily transits of the Strait of Hormuz on April 30?
+0xec2e8d1e956a8d240e292e2a7c535a7f8377d24b7c714d692a2a62809bd48e51	Will there be between 50 and 60 average daily transits of the Strait of Hormuz on April 30?
+0xd799fb4562c80d6d088ab93a5b5f04b1a12ade5cc4f4c874ecfb94bd08c23f82	Will there be 60 or more average daily transits of the Strait of Hormuz on April 30?
+0x471e2fa06bd8975b77be49a36781bc41286d57bffa84de55173f4eacdbd52b28	Will 40 ships transit the Strait of Hormuz on any day by April 30?
+0x90bfaf5467d56bc60c35dbc373aabb15b0cefe5c04df56a7b16abe581750ae20	Will 60 ships transit the Strait of Hormuz on any day by April 30?
+0xda1b8fb9630e1495cfd0c6fae52a9ffcbbe2701c5366c666b8ec5709f789485f	Will 80 ships transit the Strait of Hormuz on any day by April 30?
+0xe00f84278d7ec49668b4f9f6c6d0a437663cdcf0e330fdb3789c649f8a29fdc8	Will the US officially declare war on Iran by April 30, 2026?
+0xcdb852f150cda6dec55b2267bb6780b4fe6d35198ab7331cbed654f800d29f20	Congress passes Iran war powers resolution by April 30?
+0x98c1246f7cfc5c63ba30e7d71ce93144f56e96e374dcb0bbe36d022df8cd89e6	US announces military support of Iran opposition by April 30?
+0x8ed9ef25fbd07f6447cf8677b825b333df5daf684c95cbea6570e079b952b642	Will Trump declare war on Iran by April 30, 2026?
+0x789c947a9415600d30d56a4aae88d4111996679b0caed166d0c96242fdce92a2	Will the Iranian regime fall by May 31?
+0xcfeec50a34d9429bfdc60d180f391b828924b88bd40c5b2361a43b7375b7a533	Will Reza Pahlavi enter Iran by May 31?
+0x2f6a547524c1d290f8a2bbff80be2b0e8ca1b3b716dd3a0e74bf8ddb3e3fd6b7	Iran leadership change by May 31?
+0xb196a122933da9aff6cb8b0f3764d0dc5db1859f46c0481c711521eee8524291	Iran leadership change by June 30?
+0x791f879219f18977b17076657b4d9952c1961e525039019155563f6b6d85bd68	Mojtaba Khamenei leaves Iran by May 31, 2026?
+0xc41436a8fdcf3e8adff61fcf0b4688e0652e718f401111b3090c0ce5e45a5ffc	Mojtaba Khamenei leaves Iran by June 30, 2026?
+0x82114f9f05c4cffee7ea17db47367339620aa7b59d3e321f4613471c74ac860f	Abbas Araghchi out as Minister of Foreign Affairs of Iran by April 30, 2026?
+0x5d37825716832a4a54f89450932e89510f26cf4be59aeec3149d2c49e5fdf44d	Iran agrees to surrender enriched uranium stockpile by April 30, 2026?
+0x6cb3ec9e0fb1c258898f648f8b33422f59ba3e8a71aee551449d7cb147bb8ead	Iran agrees to surrender enriched uranium stockpile by June 30, 2026?
+0xe846dd72f8a654ef137a3e23a88226400b42cc0ca817ab4390a615860e08cafa	Iran agrees to surrender enriched uranium stockpile by December 31, 2026?
+0x6c013e0e10d2ff82a7abb928879919fcc3cbe90fb2c1d8f26c5d44c9f5aac6fd	Will the United Kingdom send warships through the Strait of Hormuz by April 30, 2026?
+0xb0dc25ce8888cc89c2639d3b1c4d53aeb81afcbeae79d2450fdd8a6db384223f	Will France send warships through the Strait of Hormuz by April 30, 2026?
+0x1c4647c26f80117304be0ca52e261d178bc8d1a1f8fe7145c411235ecd11686c	Will Germany send warships through the Strait of Hormuz by April 30, 2026?
+0xb54eb55f93109e7f456610f8f58f3eb7cc40f3898062ea1f8cc54ff29d40fbb3	Will Italy send warships through the Strait of Hormuz by April 30, 2026?
+0xba03932ff1d4aec87ab8e09aeba07fde43a035c706b141158d64d64abafd900b	Will the Netherlands send warships through the Strait of Hormuz by April 30, 2026?
+0x325d0ee18895109bd0e6127dea6c589e2644b1635a8b9e7f5c7909378a51ad5f	Will Japan send warships through the Strait of Hormuz by April 30, 2026?
+0xb970a2b9e332cbf0aa386c8928b94c3b164bb02c4831053963291dc16cf01dc7	Will Canada send warships through the Strait of Hormuz by April 30, 2026?
+0x3d5b2a72c8dd2742bfe72b7bfea5f6da16725623e009e0871666bec0b36dc3b6	Will India send warships through the Strait of Hormuz by April 30, 2026?
+0x8ee833cddfaed8154a3c19daeba5d88e44c0e7102ac1cb40e50516daa12837c3	Will Greece send warships through the Strait of Hormuz by April 30, 2026?
+0x09640c8f13940eb7cd86696f89c67925564ec9aac139bc3c1b9913c6202f9671	Will Pakistan send warships through the Strait of Hormuz by April 30, 2026?
+0xe051d1d70197f7e493c9c2421b8352f5c1be856c5ceea5014a461e8a7581b5c2	US announces military support of Kurds in Iran by April 30?
+0xff68b32e6543ae8b44ccb520604b6ea224a1bac071a186fb65f6f40949a758df	 Iran agrees to end enrichment of uranium by December 31?
+0xbcacd5a055f5a9ced6f69f122216c073dd6987d08253fc07bbcc168fa5b81d55	US obtains Iranian enriched uranium by May 31?
+0x518a5b030b205706b8ffe6bbad9bd3de59548348e5c0471827f5de21e513333c	Strait of Hormuz traffic returns to normal by end of May?
+0x57c1e8de9d359a76055fe1be95e46a1e72d0537811dcc2ccf070cdfa73d8ba33	Trump announces end of military operations against Iran by May 31st?
+0xf27794e12b7d1ee3055a2d3f969b8c70d8ea4de0edb7d0516df67f05178e4617	Another Iranian diplomat expelled by April 30?
+0x2c32d0c0056fd2650a39549f6382ab0ed7953fddaf8fcf6875b6b1451d6680b0	Will Trump say "Iran" during King Charles visit?
+0xceb6dfaa2cf5abc9d47ebc867b984a7715104944249274e8a483a2e17473e5f5	US x Iran permanent peace deal by April 30, 2026?
+0x0e4a0c937b8934c2475613b6322b3f8edc8dedc24762e01e42b0e6f87424a089	US x Iran permanent peace deal by May 31, 2026?
+0x807ba575f84169bdb061dd05da3e8eb314a129aa152e31518c2aff9979d5f986	Will Trump agree to Iranian enrichment of uranium in April?
+0xafbb2da36141abeffe30d6fbdca5f9cd7f8113a70a1e243ed03ef5a6004a104e	Will Trump agree to Iranian Oil sanction relief in April?
+0xb1bdbb044eb10d751a7245adb9a9265b60d193cb79107ea3a746f4bd1b2adfba	Will Trump agree to Iranian transit fees in the Strait of Hormuz in April?
+0xf9f0965a3bd704ad9c184851242606ad35a4ffe733febf5074d4fbcc59d52eb8	US x Iran diplomatic meeting by April 30, 2026?
+0xe31a6c763685129123cb6a0f729bfce04b768c5a22cb09c5610406df1a302465	Will Donald Trump announce that the United States blockade of the Strait of Hormuz has been lifted by April 30, 2026?
+0x189c38e8bf3733572f401f8d578099f7233baef3d5fcb438b4eeb0b73bacc787	Will no qualifying diplomatic US-Iran meeting occur by June 30, 2026?
+0x026750b9545df1861e77a85eb5461e621955344738355a6c7fe69bc78510d5d6	Will the next diplomatic US-Iran meeting be in Oman?
+0xe24b9a3e9c3dbf6540d71a0a49dde378e2aa639241d93221f5a9109fd86ff3d0	Will the next diplomatic US-Iran meeting be in the UAE?
+0x9e4b8175217a1423b682116f75e901ce695bdca6271bafed276879211267a098	Will the next diplomatic US-Iran meeting be in Saudi Arabia?
+0xc7373d242a34de5c184ffdc9707e7b179ea6aa8f8600686ca2ddecbdbec9457b	Will the next diplomatic US-Iran meeting be in Qatar?
+0x291ff8aa0b7439389820e49584499d6dc65cf617dde1a47c4b84d05f42c85639	Will the next diplomatic US-Iran meeting be in Switzerland?
+0x061d30d493488624cb80cce362179251bd837ea6a0664ed4d7fd6a126ab8caa7	Will the next diplomatic US-Iran meeting be in Austria?
+0x3a77d00f9f4a9a588a79d72a27cbdd07f8de96882b3d710badecd1b26e08764b	Will the next diplomatic US-Iran meeting be in Turkey?
+0x30d6852a292eb101cc92a9eed7b2b7be612031f820c34228a2771bdc4343c9c4	Will the next diplomatic US-Iran meeting be in Iran?
+0x991149c636b6756e36eb0af09200e7da254b07c488b708ef794f2595dc0b017b	Will the next diplomatic US-Iran meeting be in the United States?
+0x2a903c12cade39c8cf0e348772644b657b6d6045c61295082dac8a9f717f5221	Will the next diplomatic US-Iran meeting be in Egypt?
+0x549491140b9b057ecbc6606b0a7e15e860ae16c9778e95751291bdc9c13bfaa9	Will the next diplomatic US-Iran meeting be in Italy?
+0x6967cb835a1ee6ec2b4e3a05ea32d91a10c6e72eeb50539018d0d7ec90305ada	Will the next diplomatic US-Iran meeting be in Iraq?
+0xe9e2214285465e1d1fc3eaa2a3072c98346fd1dee8e6956768c5e41d4d0acd93	Will the next diplomatic US-Iran meeting be in Kazakhstan?
+0x0f3062f421a43ab9af2f3dc9c3eef48e2aab38a4c9858aca7651947642c4c964	Will the next diplomatic US-Iran meeting be in Pakistan?
+0xfa8eeaa9872ac4fbe207d4ff0f559b3a59a3dc0a5350f03b3ccc6e9af79039c4	Will the next diplomatic US-Iran meeting be in Russia?
+0x4cb5cc8406ef25b58f86ae5157f7dd6fc9bb28171f748aa61dec606776090a45	Will the next diplomatic US-Iran meeting be in another Middle East/North Africa country?
+0xd45b7c592c566c75d5ee5a225d4ed0e2c75c84f06dd28c9c458f2bbfb6dcb0d3	Will the next diplomatic US-Iran meeting be in another European country?
+0xfec5144509bab2118c9c172a71a3705e269a61aca2ab1de20cb23f0e17200661	Will the next diplomatic US-Iran meeting be in another country?
+0x6114a8a3f9ac214f48a7e20d169f1c7a5c84082cb6f7058ed9fe1137b11fd0e7	US x Iran permanent peace deal by June 30, 2026?
+0x348cd9adf4f6855f58bd9c6dbf9ff251c4142ef77233a5dc95c65b4b61cd2187	Strait of Hormuz traffic returns to normal by end of June?
+0x8b369e10358094a99ffe7f85a81a8e8ca68c611eee0fe63a2efa790ad045bcd6	Will Donald Trump announce that the United States blockade of the Strait of Hormuz has been lifted by May 31, 2026?
+0x6468c95a0308394330bf55ae21835c8a341bf7efaeb697964ea5f9107972da2c	Will Trump agree to unfreeze Iranian assets in April?
+0x3e1363efbf76899943f61797d0ffc2de5c47a716e2ec66189f45ab65b28078f9	Iran agrees to unrestricted shipping through Hormuz in April?
+0xbdb17bc42314c7879e6bde4a15136a9a0f16605f6e530462b9dad774d1e63d86	Will Donald Trump attend the next US x Iran diplomatic meeting?
+0xa65e9c75c4ad990e97e598f4c279887da5d51e0dddb781fcca0691c1c2798d9e	Will Marco Rubio attend the next US x Iran diplomatic meeting?
+0x7e5228c4aa228752fb75ec1ffcb315a5f2fef812d746ceb6601cee285366d1a8	Will J.D. Vance attend the next US x Iran diplomatic meeting?
+0xf0abc9c2b0726ec594aa6547d121e46d5264d778f20acd00689d5c21b5e38d18	Will Jared Kushner attend the next US x Iran diplomatic meeting?
+0x7e591fb31786d46761d906abbffbcec8eba519b649909bfb2d7833609a960782	Will Steve Witkoff attend the next US x Iran diplomatic meeting?
+0xd666c8eb740964a90685bf02d2a235a0970907fc48434e607011e89f6a092ea8	Will Donald Trump have a diplomatic meeting with Iran by April 30?
+0x52bda1b8d68c469eb3176f2052f4da7cacc65a814c51f53294637d124af6afde	Will J.D. Vance have a diplomatic meeting with Iran by April 30?
+0x6fb3d72559f000f6b96fda876a2038a3a6058fee06f4a4e6328cedaba34ff555	Will Marco Rubio have a diplomatic meeting with Iran by April 30?
+0xbcf8a1105392d88cdd573deaa65df33e1f89fc87d250fd6f5513b60ee51f548a	Will Jared Kushner have a diplomatic meeting with Iran by April 30?
+0x7aa6ecf3de5537b7822a0d6041b713ecc4d8b5c9f58449e16509c8af43db86ef	Will Steve Witkoff have a diplomatic meeting with Iran by April 30?
+0xaa980c83777851bf22a3bd4eeee864d11ce7783096a22ce4af56ff9bf2e1d2cd	Will fewer than 25 ships transit the Strait of Hormuz between April 20-April 26?
+0x057ba0dee9374d3ebc290eb59d469070b06b1923cd24a153b2e0f8add545b703	Will 25-49 ships transit the Strait of Hormuz between April 20-April 26?
+0x349d195e9f83aea1ad3c89f3ecc69c3f64061addae2b74f40d3e66207fc8563f	Will 50-74 ships transit the Strait of Hormuz between April 20-April 26?
+0x322276af6e480c4ae02f6970303d13e14c67f4e2e1d8c580c5f6d9787b76875d	Will 75-99 ships transit the Strait of Hormuz between April 20-April 26?
+0xbe26cb4271d859584f3acc2c8f8ea9ae872f6845d89b3b1777ab100918f08906	Will 150 or more ships transit the Strait of Hormuz between April 20-April 26?
+0x2f77d82d8dd3272e1d8b62bc4dbe5068e923a7d7270b77b5f7389275d642f1e2	Will 100-124 ships transit the Strait of Hormuz between April 20-April 26?
+0x0baa8bbb7b974a19e8b91205be112e064df134c7e4ae90476ca50c247c82daf1	Will 125-149 ships transit the Strait of Hormuz between April 20-April 26?
+0xd87a0ee5367e38072ac013e99035672125fee3a3f4446f0389fe806e42e3e42e	US obtains Iranian enriched uranium by April 30?
+0x58998da8fa20593cf07618032acd580344a79279a8bcc3ed128b668d793c3d6f	US obtains Iranian enriched uranium by December 31?
+0x824bec96e4079af56f07182c36c675d948bdfcb7a251bcadf91409f096b86f61	Will Trump post "Make Iran Great Again" or "MIGA" on Truth Social this week?
+0x79e7d16f5c71ab6ff5f805f77045eb5cef7b8f6aa87db54ebabeb3373d31b254	Trump renames Strait of Hormuz to "Strait of Trump" by May 31?
+0x1d2787cb8aed975d092b2799ed6f4083e9445f7420cdc09e9d47e7d54356c6cd	US x Iran ceasefire extended by April 22, 2026?
+0x200d8c839b9a469ae51a309f16725f44aabedd276d6c2a9b1e2e5be3c8a00a4e	Will an Iranian agent be charged in the US by May 31?
+0xcc219b07a81f5c0e12a341dc8609ad99ce63d3306ca9f4a60e213a12aabe8a79	Will the next US x Iran diplomatic meeting be on April 27?
+0x8c21973cfec923403774862ebcc46dd6235e33396cf5b82f136f971711a83a9b	Will the next US x Iran diplomatic meeting be on April 28?
+0x5bf7b3a819cc0419c149ee021f747459a0e4fcfcb8dd266e27b1c3ea60a86573	Will the next US x Iran diplomatic meeting be on April 29?
+0x481b8dc6787c619ec4ea6d31f3eddb870cf4f454acdc0fd879c2b837d454cb39	Will the next US x Iran diplomatic meeting be on April 30?
+0x49deab582fbd0ede950a160d0005d1f775a5a3721517f54d03e3bcc588d6da29	Will the next US x Iran diplomatic meeting be on May 1?
+0xa7feb973a50b1b345b311e49914b6edacf8fc0a59f404cb6ea28a752ada82353	Will the next US x Iran diplomatic meeting be on May 2?
+0x971d18417445533cf445f1f32f6c6c4edc2ace9899fb136b079a9f3fdcb3479c	Will the next US x Iran diplomatic meeting be on May 3?
+0x57975267480691701ba473fc776713769bb32ddebc84a155afcacb041d2e30de	Will the next US x Iran diplomatic meeting be on May 4?
+0x3734a3666c9722e6950310aba338f0b4828a200a2b96aaefe8bc5d4e15b86389	Will the next US x Iran diplomatic meeting be on May 5?
+0xc48a394f130b9ac7c1d0b87daff8a71658bf3326f69b7659a14beb6a62ea5a32	Will the next US x Iran diplomatic meeting be on May 6?
+0x0584a297e722e8ad0e29182d83c880c6ee0f66c2e9753f37ffaf2110123421e5	Will the next US x Iran diplomatic meeting be on May 7?
+0x589479bda8dcde2f3c92f6a5f81bd7b9a1d1a1064b66bc82ea284cd55d7e2e09	Will the next US x Iran diplomatic meeting be on May 8?
+0x5bd68004b8ff30efc7d6e2f4c39e6927eefc95a00a2d803726622decb34d6377	Will the next US x Iran diplomatic meeting be on May 9?
+0x28bd902414e048dc280b553dbf931cc92be6b94196649f05fca3189444c548bd	Will the next US x Iran diplomatic meeting be on May 10?
+0x87d4c453e155252d84becb7b26c2c686954ee5085dffd1e7062aca1763ef14c4	Will the next US x Iran diplomatic meeting occur after May 10?
+0x7c8241e9d7d1a6e8a42c6af38aeb18479ce087f7e47227399273b12766cb9ab2	US x Iran diplomatic meeting by April 26, 2026?
+0xe208a07bd71069b04e3b89de92f71da8b155d45dc2e527dc46c3ceb2a63b307b	US x Iran diplomatic meeting by April 27, 2026?
+0x9967297556e4fd7f7e1e688a2e44d6fdbc42b0700576a1e4e67aa37764ac640a	US x Iran diplomatic meeting by April 28, 2026?
+0x1e25feaca6587256a7d830023b797279561de33ceb29845186f3d29d3569743d	US x Iran diplomatic meeting by April 29, 2026?
+0xb75c07f4252992808d7ca7d9828169c524b0fef44bf5adf78c327ef88469c986	US x Iran diplomatic meeting by May 5, 2026?
+0x70d706fe084905dbafb95dfff13b727e4073efc3ef590adc8330562bac5d26de	US x Iran diplomatic meeting by May 15, 2026?
+0xffe381a80c1e36f9e0b03a542aa8fe56e74a67d2566a4e29396d4427aa4244c9	Strait of Hormuz traffic returns to normal by May 15?
+0x27d7806482b5b70d1de4315f56d614f89ef6f302dc65dd668e3ac220a7053414	Will Trump post "Make Iran Great Again" or "MIGA" on Truth Social this week?
+0x2e1a4214e99db35069c9b79acd38411389837d8c5cb75f3d0acd983a8b87dbb6	Will the NYT front-page headlines say "Iran" this week?
+0xcba81f1fa363078267aa7e3978ffaa2e6704eccd827d54b38c4a7525fa2e54eb	Will the NYT front-page headlines say "Strait of Hormuz", "Strait", or "Hormuz" this week?
