@@ -5,7 +5,7 @@ Example (run from repo root):
         --condition-ids-file apps/recording/condition_ids.txt \
         --output-dir apps/recording/data \
         --file-name iran \
-        --interval-seconds 60
+        --interval-seconds 600
 
 Runs the WebSocket recorder and the trades downloader in the same Python
 process. The downloader executes in a worker thread on a fixed interval; the
@@ -64,8 +64,8 @@ def parse_args():
     p.add_argument(
         "--interval-seconds",
         type=int,
-        default=60,
-        help="Seconds between downloader runs (default: 60).",
+        default=600,
+        help="Seconds between downloader runs (default: 600).",
     )
     p.add_argument(
         "--min-cash",
@@ -192,7 +192,7 @@ async def supervise(args: argparse.Namespace) -> None:
         # `run_recorder` shuts itself down on stop_event; just join both tasks.
         for t in (recorder_task, downloader_task):
             try:
-                await asyncio.wait_for(t, timeout=10)
+                await asyncio.wait_for(t, timeout=60)
             except asyncio.TimeoutError:
                 t.cancel()
                 try:
