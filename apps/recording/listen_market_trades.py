@@ -148,8 +148,6 @@ def main():
                         df = get_market_trades_since(
                             condition_id=cid,
                             since_ts=window_start,
-                            page_size=10000,
-                            max_pages=50,
                             taker_only=True,
                             min_cash=args.min_cash if args.min_cash > 0 else None,
                         )

@@ -1,4 +1,14 @@
-"""Listen to Polymarket CLOB WebSocket for YES tokens and record trades + top-of-book changes."""
+"""Listen to Polymarket CLOB WebSocket for YES tokens and record trades + top-of-book changes.
+
+Example (run from repo root):
+    python3 apps/recording/listen_market_book_and_trades.py \
+        --condition-ids-file apps/recording/condition_ids.txt \
+        --book-output apps/recording/data/pipeline_updates.jsonl \
+        --trades-output apps/recording/data/pipeline_trades.jsonl
+
+The pipeline supervisor (`run_pipeline.py`) imports :func:`resolve_yes_tokens`
+and :func:`run_recorder` directly instead of spawning this script.
+"""
 
 from __future__ import annotations
 
@@ -17,9 +27,14 @@ import signal
 import time
 from datetime import datetime, timezone
 from decimal import Decimal
+from zoneinfo import ZoneInfo
 
-import requests
+CHICAGO_TZ = ZoneInfo("America/Chicago")
 
+from polymarket.utils.clob import yes_token_id
+from polymarket.utils.condition_ids import read_condition_ids
+from polymarket.utils.http import get_with_retry
+from polymarket.utils.jsonl import repair_jsonl_tail
 from polymarket.ws.listener import AsyncWebSocketListenQuotes
 
 GAMMA_MARKETS_URL = "https://gamma-api.polymarket.com/markets"
@@ -46,49 +61,31 @@ def parse_args():
         default=None,
         help="Suffix for output filenames (default: UTC timestamp).",
     )
+    p.add_argument(
+        "--book-output",
+        default=None,
+        help="Explicit JSONL output path for book updates. Overrides --output-dir/--run-name naming.",
+    )
+    p.add_argument(
+        "--trades-output",
+        default=None,
+        help="Explicit JSONL output path for trade events. Overrides --output-dir/--run-name naming.",
+    )
     return p.parse_args()
 
 
-def read_condition_ids(path: str) -> list[str]:
-    cids = []
-    with open(path) as f:
-        for line in f:
-            line = line.strip()
-            if not line or line.startswith("#"):
-                continue
-            cid = line.split()[0]
-            cids.append(cid)
-    if not cids:
-        raise SystemExit(f"No condition_ids found in {path}")
-    return cids
-
-
-def _parse_clob_token_ids(raw) -> list[str]:
-    if raw is None:
-        return []
-    if isinstance(raw, list):
-        return [str(x) for x in raw]
-    if isinstance(raw, str):
-        try:
-            parsed = json.loads(raw)
-        except json.JSONDecodeError:
-            return []
-        if isinstance(parsed, list):
-            return [str(x) for x in parsed]
-    return []
-
-
 def resolve_yes_tokens(condition_ids: list[str]) -> dict[str, dict]:
-    """Return token_meta: {yes_token_id: {"condition_id", "slug"}}.
+    """Return ``{yes_token_id: {"condition_id", "slug"}}``.
 
-    Hits Gamma /markets directly so we don't drop markets via unrelated filters.
-    YES is the first entry in clobTokenIds, matching the order of `outcomes`.
+    Verifies the YES leg via the market's ``outcomes`` field rather than
+    blindly trusting ``clobTokenIds[0]``. Markets that are closed, missing,
+    or whose YES leg can't be confirmed are skipped with a warning.
     """
     markets: list[dict] = []
     BATCH = 25
     for i in range(0, len(condition_ids), BATCH):
         chunk = condition_ids[i : i + BATCH]
-        r = requests.get(
+        r = get_with_retry(
             GAMMA_MARKETS_URL,
             params={"condition_ids": chunk},
             timeout=15,
@@ -105,6 +102,7 @@ def resolve_yes_tokens(condition_ids: list[str]) -> dict[str, dict]:
     token_meta: dict[str, dict] = {}
     missing: list[str] = []
     closed: list[str] = []
+    unverified: list[str] = []
     for cid in condition_ids:
         m = by_cid.get(cid)
         if m is None:
@@ -113,11 +111,13 @@ def resolve_yes_tokens(condition_ids: list[str]) -> dict[str, dict]:
         if m.get("closed"):
             closed.append(cid)
             continue
-        ids = _parse_clob_token_ids(m.get("clobTokenIds"))
-        if len(ids) < 1 or not ids[0]:
-            print(f"Warning: no clobTokenIds for {cid}; skipping.")
+        # Prefer shortOutcomes when present (e.g. "Yes"/"No"); fall back to outcomes.
+        yes_id = yes_token_id(
+            m.get("clobTokenIds"), m.get("shortOutcomes") or m.get("outcomes")
+        )
+        if not yes_id:
+            unverified.append(cid)
             continue
-        yes_id = ids[0]
         token_meta[yes_id] = {
             "condition_id": cid,
             "slug": str(m.get("slug") or ""),
@@ -127,6 +127,8 @@ def resolve_yes_tokens(condition_ids: list[str]) -> dict[str, dict]:
         print(f"Warning: condition_id not returned by Gamma: {cid}")
     for cid in closed:
         print(f"Warning: market is closed, skipping: {cid}")
+    for cid in unverified:
+        print(f"Warning: could not verify YES leg for {cid}; skipping.")
 
     if not token_meta:
         raise SystemExit("No subscribable YES tokens after resolution.")
@@ -252,21 +254,30 @@ class Recorder:
             self.trades_count += 1
 
 
-async def run(args):
-    cids = read_condition_ids(args.condition_ids_file)
-    print(f"Resolving {len(cids)} condition_ids via Gamma...")
-    token_meta = resolve_yes_tokens(cids)
-    print(f"Subscribing to {len(token_meta)} YES tokens.")
+def open_jsonl_appendable(path: str):
+    """Repair any partial trailing line, then open ``path`` for line-buffered append."""
+    os.makedirs(os.path.dirname(path) or ".", exist_ok=True)
+    truncated = repair_jsonl_tail(path)
+    if truncated:
+        print(f"Repaired {truncated} bytes of partial tail in {path}")
+    return open(path, "a", buffering=1)
 
-    os.makedirs(args.output_dir, exist_ok=True)
-    stamp = args.run_name or datetime.now(timezone.utc).strftime("%Y%m%d-%H%M%S")
-    trades_path = os.path.join(args.output_dir, f"trades_{stamp}.jsonl")
-    book_path = os.path.join(args.output_dir, f"book_{stamp}.jsonl")
+
+async def run_recorder(
+    token_meta: dict[str, dict],
+    book_path: str,
+    trades_path: str,
+    stop_event: asyncio.Event,
+    status_interval: float = 120.0,
+) -> None:
+    """Run the WS recorder until ``stop_event`` is set. Used by the pipeline.
+
+    Closes the output files on exit and prints a final summary.
+    """
+    trades_file = open_jsonl_appendable(trades_path)
+    book_file = open_jsonl_appendable(book_path)
     print(f"Trades -> {trades_path}")
     print(f"Book   -> {book_path}")
-
-    trades_file = open(trades_path, "a", buffering=1)
-    book_file = open(book_path, "a", buffering=1)
 
     recorder = Recorder(token_meta, trades_file, book_file)
     listener = AsyncWebSocketListenQuotes(
@@ -275,22 +286,10 @@ async def run(args):
         handle_message=recorder.handle,
     )
 
-    loop = asyncio.get_running_loop()
-    stop_event = asyncio.Event()
-
-    def _request_stop():
-        if not stop_event.is_set():
-            print("\nStopping...")
-            stop_event.set()
-
-    for sig in (signal.SIGINT, signal.SIGTERM):
-        try:
-            loop.add_signal_handler(sig, _request_stop)
-        except NotImplementedError:
-            pass
-
-    listener_task = asyncio.create_task(listener.run())
-    status_task = asyncio.create_task(_status_loop(recorder, stop_event))
+    listener_task = asyncio.create_task(listener.run(), name="ws-listener")
+    status_task = asyncio.create_task(
+        _status_loop(recorder, stop_event, status_interval), name="ws-status"
+    )
 
     try:
         await stop_event.wait()
@@ -310,19 +309,56 @@ async def run(args):
         )
 
 
-async def _status_loop(recorder: Recorder, stop_event: asyncio.Event) -> None:
+async def run(args):
+    cids = read_condition_ids(args.condition_ids_file)
+    print(f"Resolving {len(cids)} condition_ids via Gamma...")
+    token_meta = resolve_yes_tokens(cids)
+    print(f"Subscribing to {len(token_meta)} YES tokens.")
+
+    if args.book_output or args.trades_output:
+        if not args.book_output or not args.trades_output:
+            raise SystemExit("Both --book-output and --trades-output must be provided together.")
+        book_path = os.path.abspath(args.book_output)
+        trades_path = os.path.abspath(args.trades_output)
+    else:
+        os.makedirs(args.output_dir, exist_ok=True)
+        stamp = args.run_name or datetime.now(timezone.utc).strftime("%Y%m%d-%H%M%S")
+        trades_path = os.path.join(args.output_dir, f"trades_{stamp}.jsonl")
+        book_path = os.path.join(args.output_dir, f"book_{stamp}.jsonl")
+
+    loop = asyncio.get_running_loop()
+    stop_event = asyncio.Event()
+
+    def _request_stop():
+        if not stop_event.is_set():
+            print("\nStopping...")
+            stop_event.set()
+
+    for sig in (signal.SIGINT, signal.SIGTERM):
+        try:
+            loop.add_signal_handler(sig, _request_stop)
+        except NotImplementedError:
+            pass
+
+    await run_recorder(token_meta, book_path, trades_path, stop_event)
+
+
+async def _status_loop(
+    recorder: Recorder, stop_event: asyncio.Event, interval: float
+) -> None:
     last_t = recorder.trades_count
     last_b = recorder.book_count
     while not stop_event.is_set():
         try:
-            await asyncio.wait_for(stop_event.wait(), timeout=30.0)
+            await asyncio.wait_for(stop_event.wait(), timeout=interval)
         except asyncio.TimeoutError:
             pass
         dt = recorder.trades_count - last_t
         db = recorder.book_count - last_b
         last_t, last_b = recorder.trades_count, recorder.book_count
+        now_chi = datetime.now(CHICAGO_TZ).strftime("%Y-%m-%d %H:%M:%S %Z")
         print(
-            f"+{dt} trades (+{db} book updates) "
+            f"[{now_chi}] +{dt} trades (+{db} book updates) "
             f"[total {recorder.trades_count}/{recorder.book_count}]"
         )
 

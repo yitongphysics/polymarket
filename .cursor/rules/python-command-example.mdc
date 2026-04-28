@@ -1,0 +1,14 @@
+---
+description: Require a runnable command example at the top of every Python file created or edited by the agent.
+alwaysApply: true
+---
+
+# Python command example requirement
+
+When creating or editing any `.py` file, include a short module docstring at the top with an executable command example.
+
+Requirements:
+- Put the example at the top of the file in the opening docstring.
+- Use a repo-root runnable command (typically `python3 path/to/file.py ...`).
+- Keep the example aligned with the file's actual CLI flags and behavior.
+- If a file has no CLI entrypoint, add a brief note in the docstring explaining how to run the relevant function/module instead.

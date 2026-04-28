@@ -1,7 +1,10 @@
-from datetime import datetime, date, timedelta
+from datetime import date
 
 import pandas as pd
 import requests
+
+from polymarket.utils.clob import parse_string_list
+from polymarket.utils.http import get_with_retry
 
 
 BTC_range = [x * 1000 for x in range(90, 135)]
@@ -10,30 +13,29 @@ coin_range = {"BTC": BTC_range, "ETH": ETH_range}
 
 
 def _yes_no_columns(clob_series):
-    # Split Gamma API clobTokenIds string into YES and NO token id columns.
+    # Split Gamma API clobTokenIds (string or list) into YES/NO token id columns.
     def split_pair(x):
-        a, b = x[2:-2].split('", "')
+        ids = parse_string_list(x)
+        a = ids[0] if len(ids) > 0 else None
+        b = ids[1] if len(ids) > 1 else None
         return pd.Series({"YES": a, "NO": b})
 
     return clob_series.apply(split_pair)
 
 
-def get_markets_by_condition_ids(condition_ids: list) -> pd.DataFrame:
+def get_markets_by_condition_ids(condition_ids: list, batch_size: int = 20) -> pd.DataFrame:
     # Load open markets for the given condition ids, filter spreads, attach YES/NO token ids.
+    # Batched to avoid 414 URI Too Long errors when condition_ids is large.
     url = "https://gamma-api.polymarket.com/markets"
-    params = {"condition_ids": condition_ids}
-    r = requests.get(url, params=params, timeout=10)
-    r.raise_for_status()
-    data = r.json()
-    results = pd.DataFrame(data)
-    results = results[~results["orderPriceMinTickSize"].isna()]
-    results = results[~results["closed"]]
-
-    results = results[
-        results["question"]
-        .str.lower()
-        .apply(lambda q: not any(w in q for w in ["ukraine"]))
-    ]
+    batches = []
+    for i in range(0, len(condition_ids), batch_size):
+        chunk = condition_ids[i : i + batch_size]
+        r = get_with_retry(url, params={"condition_ids": chunk}, timeout=10)
+        r.raise_for_status()
+        batches.extend(r.json())
+    results = pd.DataFrame(batches)
+    #results = results[~results["orderPriceMinTickSize"].isna()]
+    #results = results[~results["closed"]]
 
     if "bestBid" not in results.columns:
         results["bestBid"] = 0.0
@@ -56,15 +58,12 @@ def get_markets_by_condition_ids(condition_ids: list) -> pd.DataFrame:
     results["bestBid"] = results["bestBid"].astype(float)
     results["bestAsk"] = results["bestAsk"].astype(float)
 
-    results = results[results["bestBid"] < 0.95]
-    results = results[results["bestAsk"] > 0.05]
-
     yn = _yes_no_columns(results["clobTokenIds"])
     results["YES"] = yn["YES"]
     results["NO"] = yn["NO"]
 
-    date_later = (datetime.now() + timedelta(days=2)).strftime("%Y-%m-%d")
-    results = results[results["endDate"] > date_later]
+    #date_later = (datetime.now() + timedelta(days=2)).strftime("%Y-%m-%d")
+    #results = results[results["endDate"] > date_later]
 
     return results
 
@@ -108,7 +107,7 @@ def get_markets_by_slug_keyword(
         params = dict(base_params)
         params["offset"] = offset
 
-        r = requests.get(url, params=params, timeout=timeout)
+        r = get_with_retry(url, params=params, timeout=timeout)
         r.raise_for_status()
         data = r.json()
         markets = (
@@ -187,7 +186,7 @@ def get_token_ids_for_strike(coin: str, strike, day: str) -> dict:
     # Resolve YES/NO CLOB token ids (and condition id when present) from slug metadata.
     slug = construct_slug(coin, day, strike)
     url = f"https://gamma-api.polymarket.com/markets/slug/{slug}"
-    r = requests.get(url, timeout=20)
+    r = get_with_retry(url, timeout=20)
     r.raise_for_status()
     data = r.json()
 
